@@ -37,9 +37,9 @@ const Projects = () => {
 
           {/* Project 2 */}
           <div className="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-2">My Portfolio</h3>
+            <h3 className="text-xl font-semibold mb-2">Online Chat Application</h3>
             <p className="text-gray-600 mb-4">
-              A personal portfolio website to showcase my projects and skills.
+              A real-time chat application built with NextJS and MongoDB Atlas.
             </p>
             <p className="text-sm text-gray-500 mb-4">Tech: NextJS, MongoDB Atlas</p>
             <div className="flex gap-4">
@@ -52,7 +52,7 @@ const Projects = () => {
                 GitHub
               </a>
               <a
-                href="https://your-todo-link.com"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-green-600 hover:underline"
@@ -64,14 +64,14 @@ const Projects = () => {
 
           {/* Project 3*/}
           <div className="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-2">Photo Uploader and Editor</h3>
+            <h3 className="text-xl font-semibold mb-2">PortFolio</h3>
             <p className="text-gray-600 mb-4">
-              A web app to upload the photos and edit them using various tools.
+              A web app to showcase my skills and projects.
             </p>
-            <p className="text-sm text-gray-500 mb-4">Tech: React, TailwindCSS, Vite, Appwrite(for Backend support)</p>
+            <p className="text-sm text-gray-500 mb-4">Tech: React, TailwindCSS, Vite</p>
             <div className="flex gap-4">
               <a
-                href="https://github.com/RohitYadav-tech443/starter-for-react"
+                href="https://github.com/RohitYadav-tech443/PortFolio"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"
@@ -79,7 +79,7 @@ const Projects = () => {
                 GitHub
               </a>
               <a
-                href="https://starter-for-react-eight.vercel.app/"
+                href="https://port-folio-eight-henna.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-green-600 hover:underline"
