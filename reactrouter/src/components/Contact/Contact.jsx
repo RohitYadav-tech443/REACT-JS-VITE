@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Contact() {
     return (
-        <div className="relative flex items-top justify-center min-h-[700px] bg-white sm:items-center sm:pt-0">
+    <div className="relative flex items-top justify-center min-h-[700px] sm:items-center sm:pt-0 bg-cover bg-center bg-[url('https://tse2.mm.bing.net/th/id/OIP.k3yHENuQIPYNx0LBJ6xKzQHaEW?pid=Api&P=0&h=180')]">
             <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div className="mt-8 overflow-hidden">
                     <div className="grid grid-cols-1 md:grid-cols-2">
@@ -10,9 +10,9 @@ export default function Contact() {
                             <h1 className="text-3xl sm:text-4xl text-gray-800 font-extrabold tracking-tight">
                                 Get in touch: 
                             </h1>
-                            <p className="text-normal text-lg sm:text-xl font-medium text-gray-600 mt-2">
+                            {/* <p className="text-normal text-lg sm:text-xl font-medium text-gray-600 mt-2">
                                 Fill in the form to start a conversation
-                            </p>
+                            </p> */}
 
                             <div className="flex items-center mt-8 text-gray-600">
                                 <svg
@@ -37,8 +37,9 @@ export default function Contact() {
                                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                                     />
                                 </svg>
-                                <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    Acme Inc, Street, State, Postal Code
+                                <div className="ml-4 text-md tracking-wide font-semibold  align-items-center">
+                                    Kamla Nehru Institute of Technology, Sultanpur, Uttar Pradesh, India
+                                    PinCode-228118
                                 </div>
                             </div>
 
@@ -60,7 +61,7 @@ export default function Contact() {
                                     />
                                 </svg>
                                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    +44 1234567890
+                                    +91 9554499724
                                 </div>
                             </div>
 
@@ -82,58 +83,17 @@ export default function Contact() {
                                     />
                                 </svg>
                                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    info@acme.org
+                                    rohit202824@gmail.com
                                 </div>
                             </div>
+                           
                         </div>
 
-                        <form className="p-6 flex flex-col justify-center">
-                            <div className="flex flex-col">
-                                <label for="name" className="hidden">
-                                    Full Name
-                                </label>
-                                <input
-                                    type="name"
-                                    name="name"
-                                    id="name"
-                                    placeholder="Full Name"
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
-                                />
+                       <div className="flex items-center justify-center h-40 bg-gray-200 text-black text-center px-4">
+                            <h2 className="text-lg font-semibold">
+                                “I’m open to internships, freelance work, or collaboration. Feel free to reach out!”
+                            </h2>
                             </div>
-
-                            <div className="flex flex-col mt-2">
-                                <label for="email" className="hidden">
-                                    Email
-                                </label>
-                                <input
-                                    type="email"
-                                    name="email"
-                                    id="email"
-                                    placeholder="Email"
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
-                                />
-                            </div>
-
-                            <div className="flex flex-col mt-2">
-                                <label for="tel" className="hidden">
-                                    Number
-                                </label>
-                                <input
-                                    type="tel"
-                                    name="tel"
-                                    id="tel"
-                                    placeholder="Telephone Number"
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
-                                />
-                            </div>
-
-                            <button
-                                type="submit"
-                                className="md:w-32 bg-orange-700 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-orange-600 transition ease-in-out duration-300"
-                            >
-                                Submit
-                            </button>
-                        </form>
                     </div>
                 </div>
             </div>

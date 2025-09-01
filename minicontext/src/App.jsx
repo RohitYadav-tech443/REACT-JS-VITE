@@ -9,9 +9,10 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <UserContextProvider>
-      <h1>React and code ko famouus kar do</h1>
+    <UserContextProvider className="bg-gray-800">
+      <h1 className='p-4 justify-center bg-pink-400'>React and code ko famouus kar do</h1>
       <Login/>
+      <br />
       <Profile/>
     </UserContextProvider>
       

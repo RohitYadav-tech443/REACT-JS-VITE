@@ -13,6 +13,7 @@ function App() {
   
   const currencyInfo=useCurrencyInfo(from)
   const options=Object.keys(currencyInfo);
+
   const swap =()=>{
     setfrom(to);
     setTo(from);
@@ -22,7 +23,7 @@ function App() {
 
   const convert=()=>{
     setconvertedAmount(amount* currencyInfo[to])
-  }
+  } 
 
   return (
     <div className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
@@ -33,7 +34,8 @@ function App() {
         <div className="w-full max-w-md mx-auto border border-gray-600 rounded-lg p-5 backdrop-blur-sm bg-white/30">
         <form 
             onSubmit={(e) =>{
-              e.preventDefault();
+              e.preventDefault(); 
+              // above line prevents the page from the reloading 
               convert();
             }}
             >

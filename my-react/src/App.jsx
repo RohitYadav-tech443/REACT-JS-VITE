@@ -6,6 +6,7 @@ import './App.css'
 function App() {
   let [counter, RohitsetCounter] = useState(15)
   // let counter=15;
+
   const addValue = () => {
     console.log("clicked", counter);
     // counter = counter + 1;
@@ -14,6 +15,7 @@ function App() {
     if(counter>=20)
     RohitsetCounter(0);
   }
+  
   const removeValue=() =>{
     if(counter<=20 || counter >0)
     RohitsetCounter(counter-1)

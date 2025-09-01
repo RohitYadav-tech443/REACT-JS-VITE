@@ -11,11 +11,12 @@ function App() {
 
   // use ref hook
   const passwordRef=useRef(null);
+  // It's commonly used to directly access the DOM element (like an input field) or persist a mutable value across renders without causing re-renders.
   const passwordGenerator = useCallback(() => {
     let pass = ""
     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-    if (numberAllowed) str + "012456789";
-    if (charAllowed) str + "!@#$%^&*()_+-={}[]~`"
+    if (numberAllowed) str += "012456789";
+    if (charAllowed) str += "!@#$%^&*()_+-={}[]~`"
 
     for (let i = 1; i <=length; i++) {
       let char = Math.floor(Math.random() * str.length + 1);
@@ -25,10 +26,11 @@ function App() {
     setPassword(pass);
   }, [length, numberAllowed, charAllowed, setPassword])
 
-  const copyPasswordToClipboard=useCallback(() => {
+const copyPasswordToClipboard=useCallback(() => {
     passwordRef.current?.select();
     passwordRef.current?.setSelectionRange(0,20)
     window.navigator.clipboard.writeText(Password);
+    // above line is very importaant and used in many places
   },
 [Password])
 
@@ -36,6 +38,8 @@ function App() {
   useEffect(() => {
     passwordGenerator();
   },[length,numberAllowed,charAllowed,passwordGenerator])
+  // This useEffect hook runs the passwordGenerator() function automatically whenever any of its dependencies change.
+  // The dependencies are length, numberAllowed, and charAllowed. This means that if any of these values change, the passwordGenerator function will be called again to generate a new password.
 
 
   return (
@@ -81,6 +85,8 @@ function App() {
               checked={numberAllowed}
               id="numberInput"
               onChange={() => setnumberAllowed((prev) => !prev)}
+              // This toggles the state of numberAllowed when the checkbox is clicked
+              // true-> false and false-> true
             />
             <label htmlFor="numberInput">Include Numbers</label>
           </div>
